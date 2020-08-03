@@ -1,3 +1,3 @@
-# P-P-Firm-Reponsive-Website
+# P&P-Firm-Reponsive-Website
 
 First attempt at responsive website
