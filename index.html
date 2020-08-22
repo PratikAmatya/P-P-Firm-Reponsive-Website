@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>P&P Architecture Firm</title>
+	<script src="jquery.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="test.css"> -->
+	<style type="text/css">
+		body{
+			background:black;
+			color:white;
+			font-size: 39px;
+			font-family:Arial; 
+			padding-left: 10px;
+		}
+		a{
+			color:  #7d161a;
+			font-family: monospace; 
+			text-decoration: none;
+		}
+		a:hover{
+			font-weight: bold;
+			/*font-family: monospace; */
+			background: #7d161a;
+			color: black;
+		}
+
+		@media only screen and (max-width: 870px) {
+			body{
+				padding: 0;
+				display: flex;
+				flex-direction: column-reverse;
+				font-size: 23.505px;
+			}
+			a{
+				background:  #7d161a;
+				color: black;
+				display: flex;
+				width: 100%;
+				flex-direction: column; 
+				/*margin-bottom: none;*/
+			}
+			a:hover{
+			font-weight: bold;
+			}
+			.current{
+				font-weight: bold;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="#" id="current" onclick="$('#current').html('Current Page');"><u>Home</u></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#">Contact</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#">About us</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#">Services</a>
+		</div>
+	<div class="contents">
+		<div>
+			<h1 id="name"> P&P Architecture Firm</h1>
+			<h2 id="moto" onclick="$('#moto').html('Customer Satisfaction is our first priority.');">We are the leading company in architecture.</h2>
+		</div>
+		<div>
+			<h3>Our Services are:</h3>
+			<ul style="list-style-type:square;">
+				<li>24-hour customer service</li>
+				<li>Delivery always on time</li>
+				<li>Highly qualified engineers</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
